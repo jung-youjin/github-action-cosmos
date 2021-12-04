@@ -22,4 +22,4 @@ jobs:
     - name: Send message to Swit
       uses: roharon/action-swit@v1
       with:
-        webhooks_url: ${{ secrets.WEBHOOKS_URL}}
+        webhooks_url: ${{ secrets.WEBHOOKS_URL }}

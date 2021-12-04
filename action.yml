@@ -1,14 +1,12 @@
-name: "action-swit"
-description: "Send Message to Swit"
-author: "roharon"
+name: "action-cosmos"
+description: "Send Messages to Messengers"
+author: "action-cosmos"
 
 inputs:
-  webhooks_url:
-    description: "Your Swit app's webhooks url"
+  app_token:
+    description: "Personal token for call"
     required: true
-  message:
-    description: "Message that you want"
-    default: "🏷 ${{ job.status }} ${{ github.sha }} - by ${{ github.actor }}"
+    default: ""
 
 runs:
   using: "docker"
